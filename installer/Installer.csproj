@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>AN-AI-Relight-V4-Setup</AssemblyName>
+    <RootNamespace>ANAIRelightV4Setup</RootNamespace>
+    <Version>4.0.0</Version>
+    <FileVersion>4.0.0.0</FileVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\payload\Info.lua" LogicalName="Info.lua" />
+    <EmbeddedResource Include="..\payload\Core.lua" LogicalName="Core.lua" />
+    <EmbeddedResource Include="..\payload\Engine.lua" LogicalName="Engine.lua" />
+    <EmbeddedResource Include="..\payload\Relight.lua" LogicalName="Relight.lua" />
+    <EmbeddedResource Include="..\payload\Relighting.lua" LogicalName="Relighting.lua" />
+    <EmbeddedResource Include="..\build_assets\relight_engine.exe" LogicalName="relight_engine.exe" />
+    <EmbeddedResource Include="..\build_assets\MODNET-LICENSE.txt" LogicalName="MODNET-LICENSE.txt" />
+    <EmbeddedResource Include="..\build_assets\DEPTH-ANYTHING-V2-LICENSE.txt" LogicalName="DEPTH-ANYTHING-V2-LICENSE.txt" />
+    <EmbeddedResource Include="..\build_assets\OPENCV-LICENSE.txt" LogicalName="OPENCV-LICENSE.txt" />
+  </ItemGroup>
+</Project>
